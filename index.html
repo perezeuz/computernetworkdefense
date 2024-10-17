@@ -20,40 +20,24 @@
             <strong>Indicators of Compromise (IoC)</strong> files, which can be used by students and professionals to test their threat hunting scripts.
         </p>
         <p>
-            The IoC files uploaded here are part of a practical exercise. Feel free to use the data below to run your scripts against them.
+            The IoC files uploaded here are part of a practical exercise. Use the information below to access the files.
         </p>
     </section>
 
     <section class="ioc-files">
         <h2>IOC Files</h2>
-        <ul class="ioc-list" id="ioc-files">
-            <!-- The files will be rendered by JavaScript below -->
-        </ul>
+        <pre>
+IOC-20241018.ioc
+IOC-20241018.gpg
+        </pre>
+        <p>Files are hosted at the base URL. Append the file names to the base URL:</p>
+        <code>https://perezeuz.github.io/computernetworkdefense/IOC-20241018.ioc</code><br>
+        <code>https://perezeuz.github.io/computernetworkdefense/IOC-20241018.gpg</code>
     </section>
 
     <footer>
         <p>&copy; 2024 Computer Network Defense - Assessment 2</p>
         <p>For educational purposes only. The IOC hashes etc. are gibberish, they are not dangerous at all.</p>
     </footer>
-
-    <script>
-        // JavaScript to render IoC files into the list
-        const iocFiles = [
-            { name: "IOC-20241018.ioc", date: "2024-10-18", url: "IOC-20241018.ioc" },
-            { name: "IOC-20241018.gpg", date: "2024-10-18", url: "IOC-20241018.gpg" }
-        ];
-
-        const iocList = document.getElementById('ioc-files');
-        iocFiles.forEach(file => {
-            const listItem = document.createElement('li');
-            listItem.className = 'ioc-item';
-            listItem.innerHTML = `
-                <span class="ioc-file">${file.name}</span>
-                <span class="date-info">Uploaded on: ${file.date}</span>
-                <span class="file-url" data-url="${file.url}" style="display: none;">${file.url}</span>
-            `;
-            iocList.appendChild(listItem);
-        });
-    </script>
 </body>
 </html>
