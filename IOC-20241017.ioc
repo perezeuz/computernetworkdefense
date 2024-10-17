@@ -1,0 +1,6 @@
+# Datestamp
+DATE 20241017
+# IoC values to check
+IOC 81b3eb4cdb34ea422e44e791de68aaf912b2dd280ae501045c7b989f5ee86e57 /opt/security/working
+# Strings follow. These are strings that may indicate problems
+STR "test file" /opt/security/working
