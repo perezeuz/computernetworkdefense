@@ -20,22 +20,14 @@
             <strong>Indicators of Compromise (IoC)</strong> files, which can be used by students and professionals to test their threat hunting scripts.
         </p>
         <p>
-            The IoC files uploaded here are part of a practical exercise. Feel free to download the files and run your scripts against them as part of your course requirements.
+            The IoC files uploaded here are part of a practical exercise. Feel free to use the data below to run your scripts against them.
         </p>
     </section>
 
     <section class="ioc-files">
         <h2>IOC Files</h2>
-        <ul class="ioc-list">
-            <li>
-                <span class="ioc-file">IOC-20241018.ioc</span>
-                <span class="date-info">Uploaded on: 2024-10-18</span>
-            </li>
-            <li>
-                <span class="ioc-file">IOC-20241018.gpg</span>
-                <span class="date-info">Uploaded on: 2024-10-18</span>
-            </li>
-            <!-- Add more files as necessary -->
+        <ul class="ioc-list" id="ioc-files">
+            <!-- The files will be rendered by JavaScript below -->
         </ul>
     </section>
 
@@ -43,5 +35,25 @@
         <p>&copy; 2024 Computer Network Defense - Assessment 2</p>
         <p>For educational purposes only. The IOC hashes etc. are gibberish, they are not dangerous at all.</p>
     </footer>
+
+    <script>
+        // JavaScript to render IoC files into the list
+        const iocFiles = [
+            { name: "IOC-20241018.ioc", date: "2024-10-18", url: "IOC-20241018.ioc" },
+            { name: "IOC-20241018.gpg", date: "2024-10-18", url: "IOC-20241018.gpg" }
+        ];
+
+        const iocList = document.getElementById('ioc-files');
+        iocFiles.forEach(file => {
+            const listItem = document.createElement('li');
+            listItem.className = 'ioc-item';
+            listItem.innerHTML = `
+                <span class="ioc-file">${file.name}</span>
+                <span class="date-info">Uploaded on: ${file.date}</span>
+                <span class="file-url" data-url="${file.url}" style="display: none;">${file.url}</span>
+            `;
+            iocList.appendChild(listItem);
+        });
+    </script>
 </body>
 </html>
