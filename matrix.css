@@ -1,0 +1,11 @@
+.downloads a {
+    background-color: #003300;
+    color: #0f0;
+    box-shadow: 0 0 5px #0f0;
+}
+
+.downloads a:hover {
+    background-color: #0f0;
+    color: #000;
+    box-shadow: 0 0 10px #0f0;
+}
