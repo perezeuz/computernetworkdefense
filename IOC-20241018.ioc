@@ -1,9 +1,0 @@
-# Datestamp
-DATE 20241018
-# The hash value here should be used to check the integrity of the validation tools
-VALIDATE 5a2788dd70371e93b52f421646c483efb81c82e2fa9fcdc351ed08bc4cb64efb
-STRCHECK db1075c6934b53bd762c6bb697275220b33f14e70b0b98c4505f2d040d5df0e4
-# IoC values to check
-IOC 81b3eb4cdb34ea422e44e791de68aaf912b2dd280ae501045c7b989f5ee86e57 /opt/security/mock_data
-# Strings follow. These are strings that may indicate problems
-STR "malicious_string" /opt/security/mock_data
