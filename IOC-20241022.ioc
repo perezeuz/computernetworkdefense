@@ -1,5 +1,5 @@
 # Datestamp this should match the filename 
-20241022
+DATE 20241022
 # The hash value here should be used to check the integrity of the validation tools
 # /opt/security/bin/validate and /opt/security/bin/strcheck
 VALIDATE 10d8311a0f5e756f195e81291e42e200e1b7367b4623b2dacb9fe7097b0f1c56
